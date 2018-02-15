@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_weight="0.33"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="IDA"
+            android:textColor="@color/steelGray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/arrow_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_weight="0.33"
+            android:src="@drawable/ic_arrow_forward" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Quarta, 5 de dezembro"
+            android:textColor="@color/steelGray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.25"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="GOL"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/departure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="06:55"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="01:55"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/arrival_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="07:51"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="G3-9222"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/airport_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="CNF"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/flight_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="voô direto"
+            android:textAllCaps="true"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/airport_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="GRU"
+            android:textColor="@color/steelGray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/image"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Comprar"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

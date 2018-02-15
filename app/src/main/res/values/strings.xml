@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">testMaxMilhas</string>
+
+    <string name="app_id">4121dd3c</string>
+    <string name="app_key">4824ca6a9a4ee5f27f8463caba8e7fe7</string>
+    <string name="title_activity_flights">FlightsActivity</string>
+    <string name="filter">Filtrar</string>
+</resources>
