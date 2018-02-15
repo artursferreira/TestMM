@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TextMaxMilhas.iml" filepath="$PROJECT_DIR$/TextMaxMilhas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestMaxMilhas.iml" filepath="$PROJECT_DIR$/TestMaxMilhas.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
